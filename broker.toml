@@ -1,25 +1,25 @@
 [market]
 # Aggressive pricing to capture primary orders
 mcycle_price = "0"
-mcycle_price_stake_token = "0.0000001"  # Even more aggressive pricing
+mcycle_price_stake_token = "0.00001"  # Even more aggressive pricing
 
 # Priority addresses (if you have any)
 # priority_requestor_addresses = []
 
-# Optimized for 8x RTX 4090 performance
-peak_prove_khz = 5000
+# Optimized performance
+peak_prove_khz = 400
 
 # Aggressive settings for primary order capture
-max_mcycle_limit = 2000  # Increased for your 8x RTX 4090 setup
-max_journal_bytes = 10000
+max_mcycle_limit = 400  # Increased for your 8x RTX 4090 setup
+max_journal_bytes = 15000
 min_deadline = 50  # Ultra-aggressive: accept orders with very short deadlines
 lookback_blocks = 50  # Reduced for faster processing
-max_stake = "8"  # Increased for your setup
-max_file_size = 70_000_000
+max_stake = "4"  # Increased for your setup
+max_file_size = 150_000_000
 
 # Increased capacity for primary orders
 max_concurrent_proofs = 0  # Increased for 8x GPU setup
-max_concurrent_preflights = 8  # Increased for better throughput
+max_concurrent_preflights = 6  # Increased for better throughput
 
 # Order pricing priority - process orders by shortest expiry first
 order_pricing_priority = "shortest_expiry"
