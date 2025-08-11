@@ -7,15 +7,15 @@ mcycle_price_stake_token = "0.00001"  # Even more aggressive pricing
 # priority_requestor_addresses = []
 
 # Optimized performance
-peak_prove_khz = 400
+peak_prove_khz = 3200
 
 # Aggressive settings for primary order capture
-max_mcycle_limit = 400  # Increased for your 8x RTX 4090 setup
-max_journal_bytes = 15000
+max_mcycle_limit = 60000  # Increased for your 8x RTX 4090 setup
+max_journal_bytes = 18000
 min_deadline = 50  # Ultra-aggressive: accept orders with very short deadlines
 lookback_blocks = 50  # Reduced for faster processing
-max_stake = "4"  # Increased for your setup
-max_file_size = 150_000_000
+max_stake = "21"  # Increased for your setup
+max_file_size = 740_000_000
 
 # Increased capacity for primary orders
 max_concurrent_proofs = 0  # Increased for 8x GPU setup
@@ -29,10 +29,7 @@ max_critical_task_retries = 10
 
 # If enabled, all requests from clients not in the allow list are skipped.
 allow_client_addresses = [
-    "0xc2db89b2bd434ceac6c74fbc0b2ad3a280e66db0",
-    #"0x3ee7d9175ec8bb9e16e8fd3abdef5a354b247528",
-    #"0x2546c553d857d20658ece248f7c7d0861a240681",
-    #"0x734df7809c4ef94da037449c287166d114503198",
+       "0x734df7809c4ef94da037449c287166d114503198",
 ]
 
 # Aggressive gas settings
